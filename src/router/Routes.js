@@ -26,7 +26,7 @@ const RouterLinks = ({ data }) => {
 						<Route path="/portfolio2" element={<PortfolioPage2 data={data} />} />
 						<Route path="/portfolio3" element={<PortfolioPage3 data={data} />} />
 						<Route path="/portfolio/:Id" element={<PortfolioDetail data={data} />} />
-						<Route path="/contact" element={<ContactPage contactData={data?.contactData} />} />
+						<Route path="/contact" element={<ContactPage data={data} />} />
 						<Route path="/404" element={<ErrorPage />} />
 						<Route path="*" element={<ErrorPage />} />
 					</Routes>
