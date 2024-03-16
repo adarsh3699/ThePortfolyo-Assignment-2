@@ -79,7 +79,7 @@ const PortfolioPage2 = ({ data }) => {
 			</Helmet>
 			<Header2></Header2>
 			<PageTitle title="Portfolio" hometitle="Home" homeURL="/" currentPage="Portfolio"></PageTitle>
-			<FreelanceWork3></FreelanceWork3>
+			<FreelanceWork3 />
 			<section className="pageWrap pt-20 pb-[6.875rem] relative w-full">
 				<div className="container sm:container md:container lg:container xl:max-w-[85.625rem] mx-auto">
 					<div className="pageInner grid gap-10 md:gap-20 grid-cols-1 w-full">
