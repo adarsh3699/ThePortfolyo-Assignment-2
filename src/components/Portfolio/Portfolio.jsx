@@ -53,7 +53,7 @@ const Portfolio = ({ portfolioData }) => {
 						Want to see my professional work.{' '}
 						<Link
 							className="text-accent font-Poppins font-medium hover:text-accent2 underline underline-offset-8"
-							to="/"
+							to="/portfolio"
 							title="Click here to View More"
 						>
 							Click here to View More

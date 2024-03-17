@@ -159,8 +159,10 @@ function getData(about, email, services, skills, timeline, projects, testimonial
 			return (
 				project.enabled && {
 					id: index + 1,
+					postAuthor: name,
 					portBox: portfolioStyle[index],
 					portSubTitle: project.description,
+					postDate: project.createdAt || 'August 02, 2022',
 					portImg: project.image.url,
 					portTitle: project.title,
 					liveurl: project.liveurl,
@@ -199,7 +201,6 @@ function getData(about, email, services, skills, timeline, projects, testimonial
 				}
 			);
 		}),
-
 		blogData: {
 			useFor: 'blog',
 			sliderSetting: {

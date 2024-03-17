@@ -16,9 +16,9 @@ const RouterLinks = ({ data }) => {
 					<Routes>
 						<Route path="/" element={<HomePage data={data} />} />
 						<Route path="/home2" element={<HomePage2 data={data} />} />
-						<Route path="/blog" element={<BlogPage />} />
-						<Route path="/blog/:Id" element={<BlogDetail />} />
-						<Route path="/blog2" element={<BlogPage2 />} />
+						<Route path="/blog" element={<BlogPage data={data} />} />
+						<Route path="/blog2" element={<BlogPage2 data={data} />} />
+						<Route path="/blog/:Id" element={<BlogDetail data={data} />} />
 						<Route path="/plans" element={<PlansPage />} />
 						<Route path="/service" element={<ServicePage data={data} />} />
 						<Route path="/service/:Id" element={<ServiceDetail />} />

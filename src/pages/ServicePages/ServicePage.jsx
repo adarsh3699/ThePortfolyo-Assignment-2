@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { BottomBar2 } from '../../components/BottomBar';
 import { ContactUs2 } from '../../components/ContactUs';

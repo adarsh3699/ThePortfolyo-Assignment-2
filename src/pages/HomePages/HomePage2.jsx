@@ -33,9 +33,9 @@ const HomePage2 = ({ data }) => {
 			<Portfolio2 portfolioData={data?.portfolioData} />
 			<FreelanceWork2 />
 			<PriceTable />
-			<Partners2 />
+			{/* <Partners2 /> */}
 			<Testimonials2 reviewData={data.reviewData} />
-			<BlogPost2 />
+			<BlogPost2 portfolioData={data?.portfolioData} />
 			<ContactUs2 contactData={data.contactData} socialData={data.socialData} />
 			<BottomBar />
 		</Fragment>

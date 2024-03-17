@@ -4,7 +4,6 @@ import { FiHeart } from 'react-icons/fi';
 import { BiCommentDetail } from 'react-icons/bi';
 import { Link, useParams } from 'react-router-dom';
 import PatternImg2 from '../../assets/images/patternImg2.jpg';
-import PortImg1 from '../../assets/images/resources/portDetailImg1-1.jpg';
 import { ReactComponent as CheckMark } from '../../lib/icons/CheckMark.svg';
 import { BottomBar2 } from '../../components/BottomBar';
 import { ContactInfoProfiles3 } from '../../components/ContactInfoProfiles';

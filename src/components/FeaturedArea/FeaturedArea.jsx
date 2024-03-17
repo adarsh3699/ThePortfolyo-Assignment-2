@@ -7,7 +7,6 @@ import Shape3 from '../../assets/images/shape-3.png';
 import Shape4 from '../../assets/images/shape-4.png';
 
 const FeaturedArea = ({ heroData }) => {
-	console.log(heroData);
 	return (
 		<section className="featuredAreaWrap md:text-left text-center bg-dark z-[1] flex items-center bgGrident1 bg-blend-hard-light relative min-h-screen xl:rounded-br-[20rem] lg:rounded-br-[18rem] md:rounded-br-[15rem] sm:rounded-br-[10rem] rounded-br-0 w-screen md:py-[6.25rem] py-20">
 			<div className="shaps absolute inset-0">

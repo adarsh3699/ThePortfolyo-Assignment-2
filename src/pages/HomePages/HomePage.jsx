@@ -16,7 +16,6 @@ import { ContactUs } from '../../components/ContactUs';
 import { BottomBar } from '../../components/BottomBar';
 
 const HomePage = ({ data }) => {
-	console.log(data);
 	return (
 		<Fragment>
 			<Helmet>
@@ -31,8 +30,8 @@ const HomePage = ({ data }) => {
 			<Portfolio portfolioData={data?.portfolioData} />
 			<FreelanceWork />
 			<Testimonials reviewData={data.reviewData} />
-			<BlogPost />
-			<Partners />
+			<BlogPost portfolioData={data?.portfolioData} />
+			{/* <Partners /> */}
 			<ContactInfoProfiles />
 			<ContactUs contactData={data.contactData} socialData={data.socialData} />
 			<BottomBar />

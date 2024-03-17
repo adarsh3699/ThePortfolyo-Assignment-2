@@ -65,7 +65,7 @@ const MenuLinks = () => {
 						<li className="relative text-[.9375rem] font-Poppins font-semibold capitalize pt-2">
 							<Link
 								className="hover:text-accent text-accent2 pr-5 relative block"
-								to="/blog/:Id"
+								to="/blog/1"
 								title="Blog Detail"
 							>
 								Blog Detail

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { BottomBar2 } from '../../components/BottomBar';
@@ -9,15 +9,6 @@ import { PageTitle } from '../../components/PageTitle';
 import { ReactComponent as RightDownIcon } from '../../lib/icons/RightDown.svg';
 import { Link } from 'react-router-dom';
 import { FiChevronDown } from 'react-icons/fi';
-
-import PortImg1 from '../../assets/images/resources/portImg3-1.jpg';
-import PortImg2 from '../../assets/images/resources/portImg3-2.jpg';
-import PortImg3 from '../../assets/images/resources/portImg3-3.jpg';
-import PortImg4 from '../../assets/images/resources/portImg3-4.jpg';
-import PortImg5 from '../../assets/images/resources/portImg3-5.jpg';
-import PortImg6 from '../../assets/images/resources/portImg3-6.jpg';
-import PortImg7 from '../../assets/images/resources/portImg3-7.jpg';
-import PortImg8 from '../../assets/images/resources/portImg3-8.jpg';
 
 const filterList = [
 	{
