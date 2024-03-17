@@ -130,6 +130,7 @@ function getData(about, email, services, skills, timeline, projects, testimonial
 			services: services.map((service, index) => {
 				return (
 					service.enabled && {
+						id: index + 1,
 						servIcon: service.image.url,
 						servTitle: service.name,
 						servDesc: service.desc,
