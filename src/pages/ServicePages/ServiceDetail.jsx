@@ -7,23 +7,22 @@ import { ContactUs2 } from '../../components/ContactUs';
 import { FreelanceWork3 } from '../../components/FreelanceWork';
 import { Header2 } from '../../components/Header';
 import { PageTitle } from '../../components/PageTitle';
-import { Partners2 } from '../../components/Partners';
 import { SocialLinks5 } from '../../components/SocialLinks';
 
 import { ReactComponent as CheckMark } from '../../lib/icons/CheckMark.svg';
 import { ReactComponent as UiCreativeDesignIcon } from '../../lib/icons/Curve.svg';
 
 import PatternImg2 from '../../assets/images/patternImg2.jpg';
-import ServImg2_1 from '../../assets/images/resources/servDetailImg2-1.jpg';
 
 const ServiceDetail = ({ data }) => {
-	const servicesData = data?.serviceData?.services;
+	const { contactData, socialData, serviceData } = data;
+	const servicesData = serviceData?.services;
 	const [services, setServices] = useState([]);
 	const { Id } = useParams();
 
 	useEffect(() => {
 		let temp = servicesData.find((service) => service.id === parseInt(Id));
-
+		console.log(temp, 'temp');
 		if (temp) {
 			setServices(temp);
 		}
@@ -57,7 +56,7 @@ const ServiceDetail = ({ data }) => {
 											Services, Technology
 										</span>
 										<h2 className="text-accent2 font-Poppins font-bold leading-[1.3] text-[1.875rem] lg:text-[2rem] xl:text-[2.5rem]">
-											Stratagy & Research
+											{services.servTitle}
 										</h2>
 									</div>
 								</div>
@@ -92,12 +91,7 @@ const ServiceDetail = ({ data }) => {
 								An Interactive Story
 							</h3>
 							<p className="text-desc2 font-NunitoSans font-normal text-[1rem] md:text-[1.125rem] leading-relaxed">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Home renovations, especially those
-								involving plentiful of demolition can be a very dusty affair. The same is true as we
-								experience the emotional sensation of stress from our first instances of social
-								rejection ridicule. We quickly learn to fear and thus automatically avoid potentially
-								stressful situations of all kinds of all making mistakes.
+								{services.servDesc}
 							</p>
 							<p className="text-desc2 font-NunitoSans font-normal text-[1rem] md:text-[1.125rem] leading-relaxed">
 								Whether article spirits new her covered hastily sitting her. Money witty books nor son
@@ -137,8 +131,8 @@ const ServiceDetail = ({ data }) => {
 			</section>
 			<ContactInfoProfiles3></ContactInfoProfiles3>
 			{/* <Partners2 /> */}
-			<ContactUs2></ContactUs2>
-			<BottomBar2></BottomBar2>
+			<ContactUs2 contactData={contactData} socialData={socialData} />
+			<BottomBar2 />
 		</React.Fragment>
 	);
 };
